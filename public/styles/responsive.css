@@ -22,6 +22,12 @@
     #page-search-result .cards img{
         height: 200px;
     }
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+    #page-create-point .field-group .field + .field {
+        margin-left:0;
+    }
 }
 
 @media(min-width:1700px){
@@ -33,5 +39,18 @@
 @media(max-height:940px){
     #page-home{
         background-position-y: 200px;
+    }
+}
+
+@media(max-width: 700px){
+    #page-create-point form legend  {
+        display: block;
+    }
+    #page-create-point form legend h2{
+        margin-bottom:32px;
+    }
+    #page-create-point .items-grid{
+        display:grid;
+        grid-template-columns: 1fr;
     }
 }
